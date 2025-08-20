@@ -31,7 +31,7 @@ struct InfoResponse: Codable {
         case ageUnit = "AgeUnit"
     }
     
-    // Convert InfoResponse to Info (for UI use)
+
     func toInfo() -> Info {
         return Info(
             name: name,
@@ -47,7 +47,7 @@ struct InfoResponse: Codable {
     }
 }
 
-// OData wrapper for the response
+
 struct ODataResponse: Codable {
     let d: InfoResponse
 }

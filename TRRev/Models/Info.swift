@@ -32,10 +32,6 @@ struct Info: Codable {
     }
 }
 
-// For the simple version, you'd also need:
-//struct ODataResponse: Codable {
-//    let d: Info
-//}
 extension Info{
     static var empty: Info{
         Info( name: "",nameUpper: "", phoneNo: "", whatsappNo: "", countryCode: "IN", email: "", gender: "",age: "", ageUnit: "Y")
